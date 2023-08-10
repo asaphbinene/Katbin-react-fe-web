@@ -5,7 +5,7 @@ services:
   - katbin-react
 
 before_install:
-  - docker build -t asaphbinene/katbin-react-fe-web -f Dockerfile .
+  - docker build -t asaphbinene/katbin-react-fe-web -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true asaphbinene/katbin-react-fe-web npm run test -- --coverage

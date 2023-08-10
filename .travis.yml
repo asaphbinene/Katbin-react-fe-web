@@ -5,7 +5,7 @@ services:
   - katbin-react
 
 before_install:
-  - docker build -t asaphbinene/katbin-react-fe-web -f Dockerfile.dev .
+  - docker build -t asaphbinene/katbin-react-fe-web -f Dockerfile .
 
 script:
   - docker run -e CI=true asaphbinene/katbin-react-fe-web npm run test -- --coverage
@@ -19,5 +19,5 @@ deploy:
   bucket_path: "katbin-react-fe-web"
   on:
     branch: main
-  access_key_id: "$AWS_ACCESS_KEY"
+  access_key_id: "$AWS_ACCESS_KEY" 
   secret_access_key: "$AWS_SECRET_KEY"

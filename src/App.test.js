@@ -7,9 +7,9 @@ test('renders KATBIN Enterprises link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test('renders about services text', () => {
+test('renders about services to cut the waste of time text', () => {
   render(<App />);
-  const textElement = screen.getByText(/All about services to cut the waste of time, as time is money/i);
+  const textElement = screen.getByText(/All about services to cut the waste of time/i);
   expect(textElement).toBeInTheDocument();
 });
 

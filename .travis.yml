@@ -14,7 +14,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "katbin-react-fe-web"
-  env: "katbin-react-fe-web-env"
+  env: "Katbin-react-fe-web-env"
   bucket_name: "elasticbeanstalk-us-east-2-341223396631"
   bucket_path: "katbin-react-fe-web"
   on:
